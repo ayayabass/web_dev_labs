@@ -1,0 +1,188 @@
+// Define variables
+$primary-color: #58111A;
+$secondary-color: #a50021;
+
+// Global styles
+* {
+  box-sizing: border-box;
+}
+
+.styled-button {
+  background-color: $secondary-color;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-size: cover;
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+nav li {
+    margin: 0 1rem;
+}
+  
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+  padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px 0;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+  background-image: url("tbg1.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* subtract height of header */
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero form {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.hero input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.game-box img{
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.add-event-button {
+    size: 40px;
+    background-color: $secondary-color;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+  
+.add-event-button:hover {
+    background-color: darken($secondary-color, 10%);
+}
+
+.event-box p {
+    margin: 0;
+  }
+  
+.event-box strong {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.search {
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.popular-games .game-box:last-child,
+.current-events .event-box:last-child {
+  margin-bottom: 2rem;
+}
+
+.popular-games h2,
+.current-events h2{
+  margin-left: 2rem;
+}
+
+.popular-games .game-box,
+.current-events .event-box{
+  margin-left: 2rem;
+}
+
+.current-events {
+  background-image: url("background3.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-flow: 0;
+  height: calc(100vh - 60px); /* subtract height of header */
+  color: white;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.current-events .event-box{
+  margin-top: 1rem;
+}
+
+.popular-games {
+  background-image: url("tbg2.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: calc(100vh - 60px); /* subtract height of header */
+  color: white;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.under-image{
+  margin-top: 1rem;
+}
